@@ -1,148 +1,122 @@
-🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline. Feel free to add your own flare to it.
 
-🚫 The numbers 1️⃣ through 3️⃣ next to each item represent the week that part of the docs needs to be comepleted by.  Make sure to delete the numbers by the end of Labs.
+[![Maintainability](https://api.codeclimate.com/v1/badges/5a502ca580cc32e02669/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/artificial-artist-fe/maintainability)
 
-🚫 Each student has a required minimum number of meaningful PRs each week per the rubric.  Contributing to docs does NOT count as a PR to meet your weekly requirements.
-
-# API Documentation
-
-#### 1️⃣ Backend delpoyed at AWS ElasticBeanstalk (🚫add URL here) <br>
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5a502ca580cc32e02669/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/artificial-artist-fe/test_coverage)
 
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/22f407bd56973f8acfc5/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/groovn-be/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/22f407bd56973f8acfc5/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/groovn-be/test_coverage)
 
-## 1️⃣ Getting started
 
-To get the server running locally:
 
-🚫 adjust these scripts to match your project
+#  The Artificial Artist
 
-- Clone this repo
-- **yarn install** to install all required dependencies
-- **yarn server** to start the local server
-- **yarn test** to start server using testing environment
+ You can find the deployed project at [theartificialartist.com](https://www.theartificialartist.com/).
 
-### Backend framework goes here
-Node Express
-🚫 Why did you choose this framework?
+##  Contributors
 
--    Point One
--    Point Two
--    Point Three
--    Point Four
 
-## 2️⃣ Endpoints
 
-🚫This is a placeholder, replace the endpoints, access controll, and descriptioin to match your project
+|                                       [Courtney Jackson](https://github.com/CourtneyJa)                                        |                                       [Tucker Wray](https://github.com/jtwray)                                        |                                       [Jimmy Hooker](https://github.com/hisnameisjimmy)                                        |                                       [Jake Gifford](https://github.com/panamajake86)                                        |                                       [Jimmique Parsons](https://github.com/jimmique-parsons)                                        |
+| :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
+|                      [<img src="https://avatars2.githubusercontent.com/u/52590162?s=460&u=c1e321f74ee3bc5b1d1136ee3f32ba8db50c7ee3&v=4" width = "200" />](https://github.com/CourtneyJa)                       |                      [<img src="https://avatars3.githubusercontent.com/u/42871401?s=460&u=35f925b378034e977975950f46de33aaff941bf4&v=4" width = "200" />](https://tuckerwray.me)                       |                      [<img src="https://avatars3.githubusercontent.com/u/740373?s=460&v=4" width = "200" />](https://github.com/hisnameisjimmy)                       |                      [<img src="https://avatars0.githubusercontent.com/u/52115641?s=460&u=dde87e5c826904c67825c4b733701b8f44106d25&v=4" width = "200" />](https://github.com/panamajake86)                       |                      [<img src="https://ca.slack-edge.com/ESZCHB482-W012X6PE61X-482e0a7d5334-512" width = "200" />](https://github.com/jimmique-parsons)                       |
+|                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/CourtneyJa)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jtwray)             |           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/hisnameisjimmy)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/panamajake86)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jimmique-parsons)             |
+| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/courtney-jackson-609/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jtwray/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jamesharrisonhookerjr/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jake-gifford-4516251a/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jimmiqueparsons/) |
 
-#### Organization Routes
-
-| Method | Endpoint                | Access Control | Description                                  |
-| ------ | ----------------------- | -------------- | -------------------------------------------- |
-| GET    | `/organizations/:orgId` | all users      | Returns the information for an organization. |
-| PUT    | `/organizatoins/:orgId` | owners         | Modify an existing organization.             |
-| DELETE | `/organizations/:orgId` | owners         | Delete an organization.                      |
-
-#### User Routes
-
-| Method | Endpoint                | Access Control      | Description                                        |
-| ------ | ----------------------- | ------------------- | -------------------------------------------------- |
-| GET    | `/users/current`        | all users           | Returns info for the logged in user.               |
-| GET    | `/users/org/:userId`    | owners, supervisors | Returns all users for an organization.             |
-| GET    | `/users/:userId`        | owners, supervisors | Returns info for a single user.                    |
-| POST   | `/users/register/owner` | none                | Creates a new user as owner of a new organization. |
-| PUT    | `/users/:userId`        | owners, supervisors |                                                    |
-| DELETE | `/users/:userId`        | owners, supervisors |                                                    |
-
-# Data Model
-
-🚫This is just an example. Replace this with your data model
-
-#### 2️⃣ ORGANIZATIONS
-
----
-
-```
-{
-  id: UUID
-  name: STRING
-  industry: STRING
-  paid: BOOLEAN
-  customer_id: STRING
-  subscription_id: STRING
-}
-```
-
-#### USERS
-
----
-
-```
-{
-  id: UUID
-  organization_id: UUID foreign key in ORGANIZATIONS table
-  first_name: STRING
-  last_name: STRING
-  role: STRING [ 'owner', 'supervisor', 'employee' ]
-  email: STRING
-  phone: STRING
-  cal_visit: BOOLEAN
-  emp_visit: BOOLEAN
-  emailpref: BOOLEAN
-  phonepref: BOOLEAN
-}
-```
-
-## 2️⃣ Actions
-
-🚫 This is an example, replace this with the actions that pertain to your backend
-
-`getOrgs()` -> Returns all organizations
-
-`getOrg(orgId)` -> Returns a single organization by ID
-
-`addOrg(org)` -> Returns the created org
-
-`updateOrg(orgId)` -> Update an organization by ID
-
-`deleteOrg(orgId)` -> Delete an organization by ID
 <br>
 <br>
-<br>
-`getUsers(orgId)` -> if no param all users
 
-`getUser(userId)` -> Returns a single user by user ID
 
-`addUser(user object)` --> Creates a new user and returns that user. Also creates 7 availabilities defaulted to hours of operation for their organization.
+## Project Overview
 
-`updateUser(userId, changes object)` -> Updates a single user by ID.
+1️⃣ [Trello Board](https://trello.com/b/48TmCzIE/labs-pt9-artificial-artist)
 
-`deleteUser(userId)` -> deletes everything dependent on the user
+2️⃣ [Product Canvas](https://www.notion.so/Artificial-Artist-1934140bf39c4f2ba1b8910de0ee0d41)
 
-## 3️⃣ Environment Variables
+The Artificial Artist is a brand new music visualization experience. Combining music with generative adversarial network (GAN) images, users can create unique music visualization videos. 
 
-In order for the app to function correctly, the user must set up their own environment variables.
+## Key Features
 
-create a .env file that includes the following:
+-   Create your own music visualization videos
+-   Browse other user's videos
+-   Advance settings give users the ability to customize their videos
 
-🚫 These are just examples, replace them with the specifics for your app
-    
-    *  STAGING_DB - optional development db for using functionality not available in SQLite
-    *  NODE_ENV - set to "development" until ready for "production"
-    *  JWT_SECRET - you can generate this by using a python shell and running import random''.join([random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#\$%^&amp;*(-*=+)') for i in range(50)])
-    *  SENDGRID_API_KEY - this is generated in your Sendgrid account
-    *  stripe_secret - this is generated in the Stripe dashboard
-    
-## Contributing
+
+## Tech Stack
+
+### Front end built using:
+
+#### 1️⃣ [Reactjs](https://reactjs.org/) ![React](https://img.shields.io/badge/react-v16.13.1-blue.svg)
+
+-    Declarative --Declarative views make your code more predictable and easier to debug.
+-    Component-Based --Build encapsulated components that manage their own state, then compose them to make complex UIs.
+-    Learn Once, Write Anywhere --You can develop new features in React without rewriting existing code
+
+#### 2️⃣ [Redux](https://redux.js.org/) ![Redux](https://img.shields.io/badge/redux-v4.0.5-blueviolet.svg)
+ 
+-   Single immutable state tree
+-   Ease of Testing
+-   Global Store of App State
+
+#### Front end deployed to `AWS Amplify`
+
+#### [Back end](https://github.com/Lambda-School-Labs/artificial-artist-be) built using:
+
+#### 1️⃣ [Node Express](https://expressjs.com/) ![Express](https://img.shields.io/badge/express-v4.17.1-lightgrey.svg)
+
+-    Great performance! Node was designed to optimize throughput and scalability in web applications and is a good solution for many common web-development problems (e.g. real-time web applications).
+-    Code is written in "plain old JavaScript", which means that less time is spent dealing with "context shift" between languages when you're writing both client-side and server-side code.
+-    The node package manager (NPM) provides access to hundreds of thousands of reusable packages. It also has best-in-class dependency resolution and can also be used to automate most of the build toolchain.
+
+#### 2️⃣ [PostgreSQL](https://www.postgresql.org/) ![PostgreSQL](https://img.shields.io/badge/pg-v8.2.1-blue.svg)
+
+-    Implements the SQL standard very well.
+-    Completely open source.
+-    It supports lots of advanced data types, such as (multi-dimensional) arrays, user-defined types, etc.
+
+
+# APIs
+
+## 1️⃣ https://developers.deezer.com/api/search
+
+The API gives users access to the site's data making it available for use in third party web sites and applications. This data includes albums, artists, comments, editorials, folders, playlists, radio, searches, tracks and users. The API uses HTTP calls and responses are formatted in XML, JSON and PHP.
+
+
+# Environment Variables
+
+In order for the app to function correctly, the user must set up their own environment variables. There should be a .env file containing the following:
+
+    *  REACT_APP_SERVER_URL - for your local development server
+   
+
+# Testing
+
+## 1️⃣ [Jest](https://jestjs.io/) ![Jest](https://img.shields.io/badge/jest-v4.2.4-red.svg)
+-   Jest is a JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
+
+
+# Installation Instructions
+
+* Clone this repo
+* run `yarn install` to install all required dependencies
+* run `yarn start` to start the local server
+
+
+## Other Scripts
+
+* start - ***"react-scripts start",*** starts the production server after a build is created
+* build - ***"react-scripts build",*** creates a build of the application
+* test - ***"react-scripts test",*** runs tests in **tests** directory
+* eject - ***"react-scripts eject",*** copy the configuration files and dependencies into the project so you have full control over them
+* coverage - ***"CI=true yarn test --coverage --watchAll=false || true"*** refers to how much of your app code is covered by unit tests
+
+# Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-Please note we have a [code of conduct](./code_of_conduct.md). Please follow it in all your interactions with the project.
+Please note we have a [code of conduct](./CODE_OF_CONDUCT.md). Please follow it in all your interactions with the project.
 
-### Issue/Bug Request
-
+## Issue/Bug Request
+   
  **If you are having an issue with the existing project code, please submit a bug report under the following guidelines:**
  - Check first to see if your issue has already been reported.
  - Check to see if the issue has recently been fixed by attempting to reproduce the issue using the latest master branch in the repository.
@@ -173,5 +147,4 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Frontend Documentation](🚫link to your frontend readme here) for details on the fronend of our project.
-🚫 Add DS iOS and/or Andriod links here if applicable.
+See [Backend Documentation](https://github.com/Lambda-School-Labs/artificial-artist-be/blob/master/README.md) for details on the backend of our project.
